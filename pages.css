@@ -1,0 +1,308 @@
+@font-face{
+    font-family: 'LemonMilkRegular';
+    src: url('fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8hv;
+    background-color: #F1F2EB;
+}
+
+body{
+    background-color: #F1F2EB;
+}
+
+.logo{
+    padding-left: 2%;
+    width: 100px;
+}
+
+.dropdown-icon{
+    width: 50px;
+    margin-right: 25px;
+}
+
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: rgb(8, 28, 23);
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 2px;
+    right: 1%;
+    font-size: 25px;
+    color: #F1F2EB;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: LemonMilkRegular;
+    color: #F1F2EB;
+    display: block;
+    border: 3px solid transparent;
+}
+
+.repair-title{
+    font-family: LemonMilkRegular;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+    color: #081C17;
+}
+
+.repair-intro{
+    font-family: "montserrat";
+    font-size: 18px;
+    text-align: center;
+    color: #081C17;
+    margin: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 8vw, 5rem);
+    font-family: LemonMilkRegular;
+    font-size: 10px;
+    max-width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+.image-grid img{
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+{
+    width: 200px;
+    max-width: 100%;
+}
+
+.grid-text{
+    position: absolute;
+    padding: 8px;
+    top: 8px;
+    left: 16px;
+    background-color: transparent;
+    font-size: 13px;
+    color: #081C17;
+}
+
+.grid-img a {
+    text-decoration: none;
+    color: #081C17;
+}
+
+.grid-img{
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content h1{
+    font-family: LemonMilkRegular;
+    font-size: 22px;
+    text-align: left;
+    color: #081C17;
+    padding-bottom: 10px;
+}
+
+.buttons{
+    padding-top: 30px;
+}
+
+.zips{
+    padding-top: 30px;
+}
+
+.holes-intro{
+    font-family: "montserrat", serif;
+    font-size: 16px;
+    color: #081C17;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.link{
+    font-family: LemonMilkRegular;
+    color: #081C17;
+}
+
+.link-text{
+    font-family: "montserrat", serif;
+    font-size: 16px;
+    color: #081C17;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.heading{
+    font-family: LemonMilkRegular;
+    text-align: left;
+    color: #081C17;
+    padding-bottom: 10px;
+}
+
+.grid-container{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.grid-container > * {
+    min-width: 0;
+    overflow-x: auto;
+}
+
+.grid-item img{
+    max-width: 100%;
+    width: 300px;
+    height: 500px;
+    object-fit: fit;
+}
+
+@media screen and (max-width: 1080px){
+    .image-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-container {   
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+      }
+}
+
+@media screen and (max-width: 600px){
+    .image-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-container {   
+        grid-template-columns: repeat(1, 1fr); /* Single column layout */
+        align-items: center;
+        justify-items: center;
+      }
+}
+
+.title{
+    font-size: 36px;
+    font-family: LemonMilkRegular;
+    padding-top: 50px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.tagline{
+    font-family: "montserrat", serif;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 75px;
+    text-align: center;
+    justify-content: center;
+}
+
+.subtitle1{
+    font-family: LemonMilkRegular;
+    font-size: 18px;
+    font-style: normal;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 25px;
+    font-weight: 500;
+}
+
+.about-content{
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+    padding-top: 50px;
+    padding-right: 120px;
+}
+
+.image-container{
+    text-align: left;
+    max-width: 350px;
+    padding-top: 5px;
+}
+
+.chile-desert{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    font-size: 0.9em;
+    font-family: "montserrat", serif;
+    color: #081C17;
+    margin-top: 5px;
+}
+
+.pages-intro{
+    flex: 1;
+    font-family: "montserrat", serif;
+    font-size: 18px;
+    font-style: normal;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-weight: 500;
+}
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    font-family: "montserrat", serif;
+    color: #081C17;
+}
